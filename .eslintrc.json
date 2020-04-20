@@ -1,6 +1,7 @@
 {
   "env": {
     "es6": true,
+    "jest/globals": true,
     "node": true
   },
   "extends": [
@@ -16,14 +17,30 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "jest"
   ],
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "space-before-function-paren": ["error", "never"],
-    "@typescript-eslint/space-before-function-paren": ["error", "never"],
-    "object-curly-spacing": ["error", "never"],
-    "semi": ["error", "always"],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "@typescript-eslint/space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
     "no-console": "off",
     "no-debugger": "off"
   }
